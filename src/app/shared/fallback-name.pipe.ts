@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FallbackNamePipe implements PipeTransform {
 
     transform(value: any, gender?: string): string {
-        if (value) {
+        if (!value) {
             if (gender) {
                 if (gender == "male") {
                     return "Bob";
@@ -17,7 +17,7 @@ export class FallbackNamePipe implements PipeTransform {
             return "Harper";
         }
 
-        return "Dave";
+        return value;
     }
 
 }

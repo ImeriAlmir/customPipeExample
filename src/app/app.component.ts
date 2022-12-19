@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    name = 'my name';
+    name = 'John Doe';
+    undefinedName = undefined;
 }

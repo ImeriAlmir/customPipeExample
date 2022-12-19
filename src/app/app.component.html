@@ -1,24 +1,21 @@
 <h1>Custom Pipes</h1>
 <div class="container">
     <p>
-        without custom pipe: <b>{{ name }}</b>
+        without custom pipe and defined name: <b>{{ name }}</b>
     </p>
 </div>
+<hr />
 <div class="container">
     <p>
-        with custom pipe and <b>"female"</b> parameter:
-        <b>{{ name | fallbackName : "female" }}</b>
+        with custom pipe, <b>undefined</b> name and <b>"female"</b> parameter:
+        <b>{{ undefinedName | fallbackName : "female" }}</b>
     </p>
     <p>
-        with custom pipe and <b>"male"</b> parameter:
-        <b>{{ name | fallbackName : "male" }}</b>
+        with custom pipe, <b>undefined</b> name and <b>"male"</b> parameter:
+        <b>{{ undefinedName | fallbackName : "male" }}</b>
     </p>
     <p>
-        with custom pipe and <b>no</b> parameter:
-        <b>{{ name | fallbackName }}</b>
-    </p>
-    <p>
-        with custom pipe and <b>undefined name</b> and <b>no</b> parameter:
-        <b>{{ undefined | fallbackName }}</b>
+        with custom pipe, <b>undefined</b> name and <b>no</b> parameter:
+        <b>{{ undefinedName | fallbackName }}</b>
     </p>
 </div>
