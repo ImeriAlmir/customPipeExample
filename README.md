@@ -42,16 +42,16 @@ export  class  FallbackNamePipe  implements  PipeTransform {
 <hr />
 <div  class="container">
 	<p>
-			with custom pipe, <b>undefined</b> name and <b>"female"</b> parameter:
-			<b>{{ undefinedName  |  fallbackName : "female" }}</b>
+        with custom pipe, <b>undefined</b> name and <b>"female"</b> parameter:
+        <b>{{ undefinedName  |  fallbackName : "female" }}</b>
 	</p>
 	<p>
-			with custom pipe, <b>undefined</b> name and <b>"male"</b> parameter:
-			<b>{{ undefinedName  |  fallbackName : "male" }}</b>
+        with custom pipe, <b>undefined</b> name and <b>"male"</b> parameter:
+        <b>{{ undefinedName  |  fallbackName : "male" }}</b>
 	</p>
 	<p>
-			with custom pipe, <b>undefined</b> name and <b>no</b> parameter:
-			<b>{{ undefinedName  |  fallbackName }}</b>
+        with custom pipe, <b>undefined</b> name and <b>no</b> parameter:
+        <b>{{ undefinedName  |  fallbackName }}</b>
 	</p>
 </div>
 ```
